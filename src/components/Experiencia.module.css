@@ -1,0 +1,67 @@
+.section { align-items: center; }
+
+.heading {
+  font-family: var(--sans);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover { border-color: rgba(16,185,129,0.3); }
+
+.rol {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.periodo {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text3);
+  margin-bottom: 6px;
+}
+
+.empresa {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 1rem;
+}
+
+.tareas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tareas li {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(16,185,129,0.4);
+}

@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(15,20,25,0.95);
+}
+
+.cvBtn {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border2);
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, color 0.2s;
+}
+
+.cvBtn:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 1px;
+  transition: 0.3s;
+}
+
+.nav {
+  position: fixed;
+  bottom: 4dvw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  display: flex;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  -moz-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.link {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text2);
+  text-decoration: none;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, color 0.2s;
+}
+
+.link:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .header { padding: 1rem 1.5rem; }
+  
+  .hamburger {
+    display: flex;
+    margin-left: 1rem;
+  }
+  
+  .nav {
+    position: fixed;
+    bottom: auto;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    background: rgba(15,20,25,0.95);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .nav.open {
+    max-height: 300px;
+  }
+  
+  .link {
+    width: 100%;
+    padding: 12px 1.5rem;
+    border-radius: 0;
+    display: block;
+    border-bottom: 1px solid var(--border2);
+  }
+  
+  .link:last-child {
+    border-bottom: none;
+  }
+  
+  .link:hover {
+    background: rgba(255,255,255,0.04);
+  }
+}
+
+@media (max-width: 480px) {
+  .header { padding: 0.75rem 1rem; }
+  .cvBtn { font-size: 12px; padding: 6px 12px; }
+  .hamburger { gap: 4px; }
+  .hamburger span { width: 20px; }
+}
