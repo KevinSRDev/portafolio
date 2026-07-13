@@ -1,5 +1,6 @@
 import styles from './Navbar.module.css'
 import { useState } from 'react'
+import downloadCv from '../icons/download.svg'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +10,7 @@ export default function Navbar() {
     <>
       <header className={styles.header}>
         <a href="/CV_Tecnologo_Kevin_Romero.pdf" download className={styles.cvBtn}>
-          ↓ Descargar CV
+          <span><img src={downloadCv} alt="" style={{ width: '15px' }} /></span> Descargar CV
         </a>
         <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
           <span/>
