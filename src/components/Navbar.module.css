@@ -8,7 +8,10 @@
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(15,20,25,0.95);
+  background: rgba(13, 17, 22, 0.606);
+  -moz-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .cvBtn {
@@ -20,6 +23,9 @@
   padding: 7px 16px;
   border-radius: var(--radius-sm);
   transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .cvBtn:hover {
@@ -97,7 +103,7 @@
     border: none;
     border-bottom: 1px solid var(--border);
     padding: 0;
-    background: rgba(15,20,25,0.95);
+    background: rgba(13, 17, 22, 0.606);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;

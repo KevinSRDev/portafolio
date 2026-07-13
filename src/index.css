@@ -1,9 +1,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #0f1419;
-  --bg2: #151b24;
-  --bg3: #1a2332;
+  --bg: #0a0d12;
+  --bg2: #0f1318;
+  --bg3: #151d28;
   --border: rgba(255,255,255,0.06);
   --border2: rgba(255,255,255,0.10);
   --green: #10b981;
@@ -11,7 +11,7 @@
   --green-muted: rgba(16,185,129,0.10);
   --amber: #f59e0b;
   --amber-muted: rgba(245,158,11,0.10);
-  --text: rgba(255,255,255,0.92);
+  --text: rgba(255, 255, 255, 0.922);
   --text2: rgba(255,255,255,0.60);
   --text3: rgba(255,255,255,0.35);
   --mono: 'Fira Code', monospace;

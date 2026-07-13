@@ -1,4 +1,5 @@
 import styles from './Stack.module.css'
+import Skills from './KeyboardSkills.jsx'
 
 const stack = [
   {
@@ -56,7 +57,8 @@ export default function Stack() {
       <h2 className={styles.heading}>
         <span className={styles.icon}>{'{…}'}</span> Stack
       </h2>
-      <div className={styles.grid}>
+      <Skills/>
+      {/* <div className={styles.grid}>
         {stack.map((group) => (
           <div key={group.label} className={styles.card}>
             <p className={styles.label}>{group.label}</p>
@@ -70,7 +72,7 @@ export default function Stack() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   )
 }
