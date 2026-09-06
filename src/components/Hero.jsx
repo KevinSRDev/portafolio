@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.inner}>
-        <span className={styles.badge}>En busca de contrato de aprendizaje</span>
+        {/* <span className={styles.badge}>En busca de contrato de aprendizaje</span> */}
         <h1 className={styles.title}>
           Análista y Desarrollador<br />de Software
         </h1>
